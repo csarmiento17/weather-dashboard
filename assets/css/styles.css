@@ -1,0 +1,12 @@
+#top {
+    background-image: linear-gradient(to right, lightblue, darkblue);
+}
+
+#search-container input{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#search-container button{
+    width: 100%;
+}

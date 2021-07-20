@@ -10,17 +10,18 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./assets/css/styles.css">
   </head>
   <body>
     <div class="container">
-      <div class="row justify-content-center bg-secondary">
+      <header id='top' class="row justify-content-center purple-gradient">
         Weather Dashboard
-      </div>
+      </header>
       <div class="row">
-        <div class="col col-md-3">
+        <div id='search-container' class="col col-md-3">
           <h2>Search for a City:</h2>
-          <input type="text" />
-          <button class="btn-primary">Search</button>
+          <input id="search" type="text" name='search' />
+          <button class="btn-primary" onclick="searchHandler()">Search</button>
         </div>
         <div class="col col-md-9 bg-primary"></div>
       </div>
