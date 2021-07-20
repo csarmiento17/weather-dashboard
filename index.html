@@ -23,7 +23,16 @@
           <input id="search" type="text" name='search' />
           <button class="btn-primary" onclick="searchHandler()">Search</button>
         </div>
-        <div class="col col-md-9 bg-primary"></div>
+        <div class="col col-md-9 bg-primary">
+          <div id='daily-forecast' class="col">
+            <h1 class='city'></h1>
+            <p class='temperature'></p>
+            <p class='wind'></p>
+            <p class='humidity'></p>
+            <p class='uv'></p>
+          </div>
+          <div id='weekly-forecast' class="col">5 Day Forecast</div>
+        </div>
       </div>
     </div>
     <script src="./assets/js/main.js"></script>
