@@ -1,16 +1,24 @@
 #top {
-    background-image: linear-gradient(to right, rgba(0,0,.5,0), rgba(0,0,255,1));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0.5, 0),
+    rgba(0, 0, 255, 1)
+  );
 }
 
-#search-container input{
-    width: 100%;
-    margin-bottom: 1rem;
+#search-container input {
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-#search-container button{
-    width: 100%;
+#search-container button {
+  width: 100%;
 }
 
-#daily-forecast h1{
-    text-transform: capitalize;
+#daily-forecast {
+  border: 1px solid black;
+  margin-top: 1rem;
+}
+#daily-forecast h1 {
+  text-transform: capitalize;
 }

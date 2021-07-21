@@ -10,28 +10,37 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
     <div class="container">
-      <header id='top' class="row justify-content-center purple-gradient">
+      <header id="top" class="row justify-content-center purple-gradient">
         Weather Dashboard
       </header>
       <div class="row">
-        <div id='search-container' class="col col-md-3">
+        <div id="search-container" class="col col-md-3">
           <h2>Search for a City:</h2>
-          <input id="search" type="text" name='search' />
+          <input id="search" type="text" name="search" />
           <button class="btn-primary" onclick="searchHandler()">Search</button>
         </div>
-        <div class="col col-md-9 bg-primary">
-          <div id='daily-forecast' class="col">
-            <h1 class='city'></h1>
-            <p class='temperature'></p>
-            <p class='wind'></p>
-            <p class='humidity'></p>
-            <p class='uv'></p>
+        <div class="col col-md-9">
+          <div id="daily-forecast" class="col">
+            <h1 class="city"></h1>
+            <p class="temperature"></p>
+            <p class="wind"></p>
+            <p class="humidity"></p>
+            <p class="uv"></p>
           </div>
-          <div id='weekly-forecast' class="col">5 Day Forecast</div>
+          <div id="weekly-forecast" class="col">
+            <div class="row">5 Day Forecast:</div>
+            <div id="future-forecast" class="row">
+              <div id="daily1" class="col">Test</div>
+              <div id="daily2" class="col">1</div>
+              <div id="daily3" class="col">2</div>
+              <div id="daily4" class="col">3</div>
+              <div id="daily5" class="col">4</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
