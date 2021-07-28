@@ -22,8 +22,11 @@
           <h2>Search for a City:</h2>
           <input id="search" type="text" name="search" />
           <button class="btn-primary" onclick="searchHandler()">Search</button>
+          <hr>
+          <div id="cityHistory"></div>
         </div>
-        <div class="col col-md-9">
+      
+        <div id="forecast" class="col col-md-8">
           <div id="daily-forecast" class="col">
             <h1 class="city"></h1>
             <p class="temperature"></p>
@@ -32,18 +35,19 @@
             <p class="uv"></p>
           </div>
           <div id="weekly-forecast" class="col">
-            <div class="row">5 Day Forecast:</div>
+            <div class="row"><h3>5 Day Forecast:</h3></div>
             <div id="future-forecast" class="row">
-              <div id="daily1" class="col">Test</div>
-              <div id="daily2" class="col">1</div>
-              <div id="daily3" class="col">2</div>
-              <div id="daily4" class="col">3</div>
-              <div id="daily5" class="col">4</div>
+              <div id="daily1" class="col">Day 1</div>
+              <div id="daily2" class="col">Day 2</div>
+              <div id="daily3" class="col">Day 3</div>
+              <div id="daily4" class="col">Day 4</div>
+              <div id="daily5" class="col">Day 5</div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

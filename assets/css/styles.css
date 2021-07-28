@@ -4,6 +4,9 @@
     rgba(0, 0, 0.5, 0),
     rgba(0, 0, 255, 1)
   );
+  min-height: 4rem;
+  font-size: 3rem;
+  color: white;
 }
 
 #search-container input {
@@ -13,12 +16,54 @@
 
 #search-container button {
   width: 100%;
+  border-radius: 5px;
 }
 
+#forecast{
+  margin-left: 1rem;
+}
 #daily-forecast {
   border: 1px solid black;
   margin-top: 1rem;
+  min-height: 200px;
 }
 #daily-forecast h1 {
   text-transform: capitalize;
+}
+
+ #cityHistory{
+  margin-top: 3rem;
+} 
+
+#cityHistory button{
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+.uv{
+  width: fit-content;
+}
+
+.favorable{
+  background-color: green;
+  color: white;
+}
+.moderate{
+  background-color: yellow;
+  color: white;
+}
+.severe{
+  background-color: red;
+  color: white;
+}
+
+#daily1, #daily2, #daily3, #daily4, #daily5{
+  color:white;
+  background: #2f2f2f;
+  margin: 5px;
+  font-size: 14px;
+}
+
+[id^="cityId"]{
+  color:red;
 }
