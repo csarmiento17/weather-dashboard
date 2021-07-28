@@ -10,7 +10,7 @@ populateButtonHistory();
 
 //This function gets the longtitue and latitude
 function getCity(city) {
-  let getCityApi = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=be56721f2765afd4e946bf6cc853af53`;
+  let getCityApi = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=be56721f2765afd4e946bf6cc853af53`;
   if (!getCityApi) {
     console.log("No city");
   } else {
@@ -36,7 +36,7 @@ function displayWeather(lon, lat, selectedCity) {
   fetch(weatherApi)
     .then((response) => {
       response.json().then((data) => {
-        let weatherIcon = `http://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`;
+        let weatherIcon = `https://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`;
         let convertDate = new Date(data.current.dt * 1000);
         let date = convertDate.getDate();
         let month = convertDate.getMonth();
@@ -67,7 +67,7 @@ function displayWeather(lon, lat, selectedCity) {
 
        
         for (i = 1; i <= 5; i++) {
-          let dailyIcon = `http://openweathermap.org/img/wn/${data.daily[i].weather[0].icon}@2x.png`;
+          let dailyIcon = `https://openweathermap.org/img/wn/${data.daily[i].weather[0].icon}@2x.png`;
           let futuredate = document.getElementById(`daily${i}`);
           let convertDate = new Date(data.daily[i].dt * 1000);
           let date = convertDate.getDate();
